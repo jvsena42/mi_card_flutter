@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               CircleAvatar(
                 radius: 50.0,
@@ -34,52 +35,45 @@ class MyApp extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                     letterSpacing: 2.5),
               ),
-              Container(
-                  color: Colors.white,
-                  margin:
-                      EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                  padding: EdgeInsets.all(10.0),
-                  child: Row(
-                    children: [
-                      Icon(
-                        Icons.phone,
-                        color: Colors.teal,
-                      ),
-                      SizedBox(
-                        width: 10.0,
-                      ),
-                      Text(
-                        '+55 86 9 9800-6407',
-                        style: TextStyle(
-                            color: Colors.teal.shade900,
-                            fontFamily: 'SourceSansPro-Regular',
-                            fontSize: 20.0),
-                      ),
-                    ],
-                  )),
-              Container(
-                  color: Colors.white,
-                  margin:
-                      EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                  padding: EdgeInsets.all(10.0),
-                  child: Row(
-                    children: [
-                      Icon(
-                        Icons.email,
-                        color: Colors.teal,
-                      ),
-                      SizedBox(
-                        width: 10.0,
-                      ),
-                      Text(
-                        '+55 86 9 9800-6407',
-                        style: TextStyle(
-                            color: Colors.teal.shade900,
-                            fontFamily: 'jvsena16@gmail.com',
-                            fontSize: 20.0),
-                      ),
-                    ],
-                  )),
+              SizedBox(
+                height: 20.0,
+                width: 150.0,
+                child: Divider(
+                  color: Colors.teal.shade100
+                ),
+              ),
+              Card(
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    '+55 86 99800-6407',
+                    style: TextStyle(
+                        color: Colors.teal.shade900,
+                        fontFamily: 'SourceSansPro-Regular',
+                        fontSize: 20.0),
+                  ),
+                ),
+              ),
+              Card(
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    'jvsena16@gmail.com',
+                    style: TextStyle(
+                        color: Colors.teal.shade900,
+                        fontFamily: 'SourceSansPro-Regular',
+                        fontSize: 20.0),
+                  ),
+                ),
+              ),
             ],
           ),
         ),

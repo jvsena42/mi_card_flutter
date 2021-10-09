@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.teal,
+        backgroundColor: Colors.deepPurple,
         body: SafeArea(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
                 style: TextStyle(
                     fontFamily: 'SourceSansPro-Regular',
                     fontSize: 20.0,
-                    color: Colors.teal.shade100,
+                    color: Colors.deepPurple.shade100,
                     fontWeight: FontWeight.bold,
                     letterSpacing: 2.5),
               ),
@@ -39,7 +39,7 @@ class MyApp extends StatelessWidget {
                 height: 20.0,
                 width: 150.0,
                 child: Divider(
-                  color: Colors.teal.shade100
+                  color: Colors.deepPurple.shade100
                 ),
               ),
               Card(
@@ -47,12 +47,12 @@ class MyApp extends StatelessWidget {
                 child: ListTile(
                   leading: Icon(
                     Icons.phone,
-                    color: Colors.teal,
+                    color: Colors.deepPurple,
                   ),
                   title: Text(
                     '+55 86 99800-6407',
                     style: TextStyle(
-                        color: Colors.teal.shade900,
+                        color: Colors.deepPurple.shade900,
                         fontFamily: 'SourceSansPro-Regular',
                         fontSize: 20.0),
                   ),
@@ -63,12 +63,12 @@ class MyApp extends StatelessWidget {
                 child: ListTile(
                   leading: Icon(
                     Icons.email,
-                    color: Colors.teal,
+                    color: Colors.deepPurple,
                   ),
                   title: Text(
                     'jvsena16@gmail.com',
                     style: TextStyle(
-                        color: Colors.teal.shade900,
+                        color: Colors.deepPurple.shade900,
                         fontFamily: 'SourceSansPro-Regular',
                         fontSize: 20.0),
                   ),
